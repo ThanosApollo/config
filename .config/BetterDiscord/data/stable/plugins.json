@@ -1,0 +1,14 @@
+{
+    "ShowHiddenChannels": true,
+    "BDFDB": true,
+    "ServerDetails": true,
+    "DoNotTrack": true,
+    "WhoReacted": true,
+    "ZeresPluginLibrary": true,
+    "CallTimeCounter": true,
+    "AppNotifications": true,
+    "PermissionsViewer": true,
+    "TypingUsersAvatars": true,
+    "Translator": true,
+    "HideDisabledEmojis": true
+}

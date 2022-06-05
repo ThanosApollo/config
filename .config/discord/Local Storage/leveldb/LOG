@@ -1,0 +1,15 @@
+2022/06/04-15:00:30.945 2fad5 Reusing MANIFEST /home/apollo/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/06/04-15:00:30.946 2fad5 Recovering log #50
+2022/06/04-15:00:30.947 2fad5 Reusing old log /home/apollo/.config/discord/Local Storage/leveldb/000050.log 
+2022/06/04-15:13:01.221 2fad5 Level-0 table #54: started
+2022/06/04-15:13:01.228 2fad5 Level-0 table #54: 24768 bytes OK
+2022/06/04-15:13:01.234 2fad5 Delete type=0 #50
+2022/06/04-15:13:01.234 2fad5 Compacting 4@0 + 1@1 files
+2022/06/04-15:13:01.246 2fad5 Generated table #55@0: 36 keys, 446924 bytes
+2022/06/04-15:13:01.246 2fad5 Compacted 4@0 + 1@1 files => 446924 bytes
+2022/06/04-15:13:01.251 2fad5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/06/04-15:13:01.251 2fad5 Delete type=2 #46
+2022/06/04-15:13:01.251 2fad5 Delete type=2 #54
+2022/06/04-15:13:01.251 2fad5 Delete type=2 #44
+2022/06/04-15:13:01.251 2fad5 Delete type=2 #51
+2022/06/04-15:13:01.251 2fad5 Delete type=2 #49
