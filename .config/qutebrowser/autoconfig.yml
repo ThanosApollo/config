@@ -12,3 +12,5 @@ settings:
     global: true
   colors.webpage.darkmode.grayscale.all:
     global: false
+  content.notifications.enabled:
+    https://www.youtube.com: false
