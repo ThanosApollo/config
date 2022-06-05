@@ -1,9 +1,0 @@
-2022/06/04-02:17:33.956 a49e Reusing MANIFEST /home/apollo/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2022/06/04-02:17:33.956 a49e Recovering log #45
-2022/06/04-02:17:33.957 a49e Reusing old log /home/apollo/.config/discord/Local Storage/leveldb/000045.log 
-2022/06/04-02:21:18.833 a45f Level-0 table #49: started
-2022/06/04-02:21:18.860 a45f Level-0 table #49: 448640 bytes OK
-2022/06/04-02:21:18.865 a45f Delete type=0 #45
-2022/06/04-06:26:40.626 b955c Level-0 table #51: started
-2022/06/04-06:26:40.632 b955c Level-0 table #51: 14882 bytes OK
-2022/06/04-06:26:40.637 b955c Delete type=0 #48
