@@ -1,5 +1,5 @@
 # Config and other dotfiles
-* This is a bare git repo to host my .config files and other dot files
+>This is a bare git repo to host my .config files and other dot files
 #### Why should you make a bare git repo with your config?  
 * Having a bare git repo reduces the hustle of 'distro hoping'
 * Sync configs between different computers
