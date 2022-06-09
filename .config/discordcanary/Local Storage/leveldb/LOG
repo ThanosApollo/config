@@ -1,5 +1,0 @@
-2022/06/09-12:26:26.281 2f2423 Creating DB /home/apollo/.config/discordcanary/Local Storage/leveldb since it was missing.
-2022/06/09-12:26:26.296 2f2423 Reusing MANIFEST /home/apollo/.config/discordcanary/Local Storage/leveldb/MANIFEST-000001
-2022/06/09-12:28:36.047 2f2422 Level-0 table #5: started
-2022/06/09-12:28:36.062 2f2422 Level-0 table #5: 458357 bytes OK
-2022/06/09-12:28:36.067 2f2422 Delete type=0 #3
