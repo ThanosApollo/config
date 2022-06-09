@@ -11,6 +11,7 @@
 
 exec ~/.config/autostart/set_up.sh
 exec ~/.config/polybar/launch.sh
+exec /usr/bin/emacs --daemon
 
 
 smart_gaps on 
