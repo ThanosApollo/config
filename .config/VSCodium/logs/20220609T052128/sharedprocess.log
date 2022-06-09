@@ -1,0 +1,22 @@
+[2022-06-09 05:21:32.872] [sharedprocess] [info] Starting worker process with pid 1821632 (type: fileWatcher, window: 1).
+[2022-06-09 05:22:49.828] [sharedprocess] [info] Getting Manifest... dracula-theme.theme-dracula
+[2022-06-09 05:22:49.922] [sharedprocess] [info] Installing extension: dracula-theme.theme-dracula
+[2022-06-09 05:22:51.434] [sharedprocess] [info] Downloaded extension: dracula-theme.theme-dracula /home/apollo/.config/VSCodium/CachedExtensionVSIXs/dracula-theme.theme-dracula-2.24.2
+[2022-06-09 05:22:51.495] [sharedprocess] [info] Extracted extension to /home/apollo/.vscode-oss/extensions/.333f9b68-0d2b-496a-9c8d-343696610fc2: dracula-theme.theme-dracula
+[2022-06-09 05:22:51.504] [sharedprocess] [info] Renamed to /home/apollo/.vscode-oss/extensions/dracula-theme.theme-dracula-2.24.2
+[2022-06-09 05:22:51.507] [sharedprocess] [info] Extracting completed. dracula-theme.theme-dracula
+[2022-06-09 05:22:51.510] [sharedprocess] [info] Extension installed successfully: dracula-theme.theme-dracula
+[2022-06-09 05:24:14.564] [sharedprocess] [info] Getting Manifest... pkief.material-icon-theme
+[2022-06-09 05:24:14.658] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2022-06-09 05:24:16.148] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /home/apollo/.config/VSCodium/CachedExtensionVSIXs/pkief.material-icon-theme-4.18.0
+[2022-06-09 05:24:17.819] [sharedprocess] [info] Extracted extension to /home/apollo/.vscode-oss/extensions/.0d9c8661-c5da-408c-9f6c-bc32a078e1e1: pkief.material-icon-theme
+[2022-06-09 05:24:17.832] [sharedprocess] [info] Renamed to /home/apollo/.vscode-oss/extensions/pkief.material-icon-theme-4.18.0
+[2022-06-09 05:24:17.840] [sharedprocess] [info] Extracting completed. pkief.material-icon-theme
+[2022-06-09 05:24:17.842] [sharedprocess] [info] Extension installed successfully: pkief.material-icon-theme
+[2022-06-09 05:24:34.949] [sharedprocess] [info] Getting Manifest... a5hk.night-coder
+[2022-06-09 05:24:35.030] [sharedprocess] [info] Installing extension: a5hk.night-coder
+[2022-06-09 05:24:36.154] [sharedprocess] [info] Downloaded extension: a5hk.night-coder /home/apollo/.config/VSCodium/CachedExtensionVSIXs/a5hk.night-coder-4.2.2
+[2022-06-09 05:24:36.213] [sharedprocess] [info] Extracted extension to /home/apollo/.vscode-oss/extensions/.de99f795-ed91-45fe-9f73-d57f1c4ec7c0: a5hk.night-coder
+[2022-06-09 05:24:36.223] [sharedprocess] [info] Renamed to /home/apollo/.vscode-oss/extensions/a5hk.night-coder-4.2.2
+[2022-06-09 05:24:36.226] [sharedprocess] [info] Extracting completed. a5hk.night-coder
+[2022-06-09 05:24:36.227] [sharedprocess] [info] Extension installed successfully: a5hk.night-coder

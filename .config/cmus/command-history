@@ -1,0 +1,3 @@
+fset missing-tag=!stream&(artist=""|album=""|title=""|tracknumber=-1|date=-1)
+fset classical=genre="Classical"
+fset 90s=date>=1990&date<2000

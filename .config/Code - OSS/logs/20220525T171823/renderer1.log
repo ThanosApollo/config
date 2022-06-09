@@ -1,0 +1,6 @@
+[2022-05-25 17:18:34.620] [renderer1] [error] Unable to read file '/home/apollo/.config/polybar/config.ini' (Error: File not modified since): Error: Unable to read file '/home/apollo/.config/polybar/config.ini' (Error: File not modified since)
+    at p.doReadFileStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:594:24209)
+    at async f.doRead (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2737:42343)
+    at async f.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2737:42018)
+    at async ir.resolveFromFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2726:66754)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2737:36475
