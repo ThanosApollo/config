@@ -1,8 +1,0 @@
-[2022-05-25 16:56:45.553] [main] [info] window#load: attempt to load window (id: 1)
-[2022-05-25 16:56:45.580] [main] [info] update#ctor - updates are disabled as there is no update URL
-[2022-05-25 16:56:45.647] [main] [info] ExtensionHostStarterWorker created
-[2022-05-25 16:56:47.377] [main] [info] window#load: window reported ready (id: 1)
-[2022-05-25 16:56:47.654] [main] [info] Starting extension host with pid 78706 (fork() took 27 ms).
-[2022-05-25 16:56:47.656] [main] [info] ExtensionHostStarterWorker.start() took 35 ms.
-[2022-05-25 16:58:48.557] [main] [info] Waiting for extension host with pid 78706 to exit.
-[2022-05-25 16:58:48.584] [main] [info] Extension host with pid 78706 exited with code: 0, signal: null.
