@@ -229,8 +229,7 @@ keys = [
 
 groups = [Group("DEV", layout='monadtall'),
           Group("WWW", layout='monadtall'),
-          Group("SYS", layout='monadtall'),
-          Group("SYS", layout='monadtall'),
+          Group("ANKI", layout='monadtall'),
           Group("DOC", layout='monadtall'),
           Group("VBOX", layout='monadtall'),
           Group("CHAT", layout='monadtall'),
