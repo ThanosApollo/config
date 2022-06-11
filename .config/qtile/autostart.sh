@@ -1,5 +1,6 @@
 #!/usr/bin/env bash 
 
+setxkbmap -option caps:swapescape
 festival --tts $HOME/.config/qtile/welcome_msg &
 lxsession &
 picom &
