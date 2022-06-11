@@ -139,6 +139,18 @@ keys = [
              lazy.layout.toggle_split(),
              desc='Toggle between split and unsplit sides of stack'
              ),
+         ### Volume controls
+         Key([], "XF86AudioLowerVolume",
+             lazy.spawn('amixer -D pulse sset Master 5%-'),
+             desc="Decrease volume"
+            ),
+         Key([], "XF86AudioRaiseVolume",
+             lazy.spawn('amixer -D pulse sset Master 5%+'),
+             desc="Increase volume"
+            ),
+
+
+
          # Emacs programs launched using the key chord CTRL+e followed by 'key'
          KeyChord(["control"],"e", [
              Key([], "e",
@@ -172,8 +184,8 @@ keys = [
              Key([], "v",
                  lazy.spawn("emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'"),
                  desc='Launch vterm inside Emacs'
-                 )
-         ]),
+                 ),
+                     ]),
          # Dmenu scripts launched using the key chord SUPER+p followed by 'key'
          KeyChord([mod], "p", [
              Key([], "e",
