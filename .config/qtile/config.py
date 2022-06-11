@@ -21,7 +21,7 @@ keys = [
              lazy.spawn(myTerm+" -e fish"),
              desc='Launches My Terminal'
              ),
-         Key([mod, "shift"], "Return",
+         Key([mod], "Tab",
              lazy.spawn("dmenu_run -p 'Run: '"),
              desc='Run Launcher'
              ),
@@ -29,7 +29,7 @@ keys = [
              lazy.spawn(myBrowser),
              desc='Qutebrowser'
              ),
-         Key([mod], "Tab",
+         Key([mod, "shift"], "c",
              lazy.next_layout(),
              desc='Toggle through layouts'
              ),
@@ -41,7 +41,7 @@ keys = [
              lazy.restart(),
              desc='Restart Qtile'
              ),
-         Key([mod, "shift"], "q",
+         Key([mod, "shift"], "0",
              lazy.shutdown(),
              desc='Shutdown Qtile'
              ),
@@ -224,7 +224,7 @@ groups = [Group("DEV", layout='monadtall'),
           Group("CHAT", layout='monadtall'),
           Group("MUS", layout='monadtall'),
           Group("VID", layout='monadtall'),
-          Group("GFX", layout='floating')]
+          Group("GFX", layout='monadtall')]
 
 # Allow MODKEY+[0 through 9] to bind to groups, see https://docs.qtile.org/en/stable/manual/config/groups.html
 # MOD4 + index Number : Switch to Group[index]
@@ -275,7 +275,7 @@ layouts = [
     layout.Floating(**layout_theme)
 ]
 
-colors = [["#282c34", "#282c34"],
+colors = [["#000000", "#282c34"],
           ["#1c1f24", "#1c1f24"],
           ["#dfdfdf", "#dfdfdf"],
           ["#ff6c6b", "#ff6c6b"],
