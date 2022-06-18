@@ -13,7 +13,7 @@ from typing import List  # noqa: F401from typing import List  # noqa: F401
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "librewolf" # My browser of choice
+myBrowser = "librewolf"   # My browser of choice
 
 keys = [
          ### The essentials
@@ -46,7 +46,7 @@ keys = [
              desc='Shutdown Qtile'
              ),
          Key([mod, "shift"], "e",
-             lazy.spawn("emacs"),
+             lazy.spawn("emacsclient -c -a 'emacs'"),
              desc='Doom Emacs'
              ),
          ### Switch focus to specific monitor (out of three)
@@ -500,7 +500,7 @@ def init_widgets_list():
 
 def init_widgets_screen1():
     widgets_screen1 = init_widgets_list()
-    del widgets_screen1[9:10]               # Slicing removes unwanted widgets (systray) on Monitors 1,3
+    #del widgets_screen1[9:10]               # Slicing removes unwanted widgets (systray) on Monitors 1,3
     return widgets_screen1
 
 def init_widgets_screen2():
@@ -555,7 +555,7 @@ mouse = [
 
 dgroups_app_rules = []  # type: List
 follow_mouse_focus = True
-bring_front_click = False
+bring_front_click = True
 cursor_warp = False
 
 floating_layout = layout.Floating(float_rules=[
@@ -569,7 +569,7 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='pinentry-gtk-2'), # GPG key password entry
 ])
 auto_fullscreen = True
-focus_on_window_activation = "smart"
+focus_on_window_activation = True
 reconfigure_screens = True
 
 # If things like steam games want to auto-minimize themselves when losing
