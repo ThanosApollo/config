@@ -6,7 +6,9 @@
  '(custom-safe-themes
    '("97db542a8a1731ef44b60bc97406c1eb7ed4528b0d7296997cbb53969df852d6" default))
  '(doc-view-continuous t)
- '(org-agenda-files '("~/Med/UniversityNotes/test.org")))
+ '(org-agenda-files '("~/Med/UniversityNotes/test.org"))
+ '(warning-suppress-log-types '((erc) (erc)))
+ '(warning-suppress-types '((erc) (erc))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
