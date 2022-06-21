@@ -13,7 +13,7 @@ from typing import List  # noqa: F401from typing import List  # noqa: F401
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "librewolf"   # My browser of choice
+myBrowser = "firefox"   # My browser of choice
 
 keys = [
          ### The essentials
@@ -231,11 +231,11 @@ groups = [Group("DEV", layout='monadtall'),
           Group("WWW", layout='monadtall'),
           Group("ANKI", layout='monadtall'),
           Group("DOC", layout='monadtall'),
-          Group("VBOX", layout='monadtall'),
+          Group("MUSIC", layout='monadtall'),
           Group("CHAT", layout='monadtall'),
-          Group("MUS", layout='monadtall'),
+          Group("VBOX", layout='monadtall'),
           Group("VID", layout='monadtall'),
-          Group("GFX", layout='monadtall')]
+          Group("RAND", layout='monadtall')]
 
 # Allow MODKEY+[0 through 9] to bind to groups, see https://docs.qtile.org/en/stable/manual/config/groups.html
 # MOD4 + index Number : Switch to Group[index]
@@ -392,7 +392,7 @@ def init_widgets_list():
                        ),
               widget.TextBox(
                        text = '',
-                       font = "MesloLGS",
+                       font = "Ubuntu Mono",
                        background = colors[0],
                        foreground = colors[3],
                        padding = 0,
@@ -581,12 +581,5 @@ def start_once():
     home = os.path.expanduser('~')
     subprocess.call([home + '/.config/qtile/autostart.sh'])
 
-# XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
-# string besides java UI toolkits; you can see several discussions on the
-# mailing lists, GitHub issues, and other WM documentation that suggest setting
-# this string if your java app doesn't work correctly. We may as well just lie
-# and say that we're a working one by default.
-#
-# We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
-# java that happens to be on java's whitelist.
-wmname = "LG3D"
+## Naming
+wmname = "Qtile-ChadVersion"
