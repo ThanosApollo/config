@@ -7,13 +7,13 @@ from libqtile import qtile
 from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
-from libqtile.lazy import lazy
+#from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from typing import List  # noqa: F401from typing import List  # noqa: F401
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "firefox"   # My browser of choice
+myBrowser = "librewolf"   # My browser of choice
 
 keys = [
          ### The essentials
@@ -52,11 +52,11 @@ keys = [
          ### Switch focus to specific monitor (out of three)
          Key([mod], "e",
              lazy.to_screen(0),
-             desc='Keyboard focus to monitor 1'
+             desc='Keyboard focus to monitor 2'
              ),
          Key([mod], "w",
              lazy.to_screen(1),
-             desc='Keyboard focus to monitor 2'
+             desc='Keyboard focus to monitor 1'
              ),
          Key([mod], "r",
              lazy.to_screen(2),
@@ -148,84 +148,10 @@ keys = [
              lazy.spawn('amixer -D pulse sset Master 5%+'),
              desc="Increase volume"
             ),
+    ]
 
 
 
-         # Emacs programs launched using the key chord CTRL+e followed by 'key'
-         KeyChord(["control"],"e", [
-             Key([], "e",
-                 lazy.spawn("emacsclient -c -a 'emacs'"),
-                 desc='Launch Emacs'
-                 ),
-             Key([], "b",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(ibuffer)'"),
-                 desc='Launch ibuffer inside Emacs'
-                 ),
-             Key([], "d",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(dired nil)'"),
-                 desc='Launch dired inside Emacs'
-                 ),
-             Key([], "i",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(erc)'"),
-                 desc='Launch erc inside Emacs'
-                 ),
-             Key([], "m",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(mu4e)'"),
-                 desc='Launch mu4e inside Emacs'
-                 ),
-             Key([], "n",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(elfeed)'"),
-                 desc='Launch elfeed inside Emacs'
-                 ),
-             Key([], "s",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(eshell)'"),
-                 desc='Launch the eshell inside Emacs'
-                 ),
-             Key([], "v",
-                 lazy.spawn("emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'"),
-                 desc='Launch vterm inside Emacs'
-                 ),
-                     ]),
-         # Dmenu scripts launched using the key chord SUPER+p followed by 'key'
-         KeyChord([mod], "p", [
-             Key([], "e",
-                 lazy.spawn("./dmscripts/dm-confedit"),
-                 desc='Choose a config file to edit'
-                 ),
-             Key([], "i",
-                 lazy.spawn("./dmscripts/dm-maim"),
-                 desc='Take screenshots via dmenu'
-                 ),
-             Key([], "k",
-                 lazy.spawn("./dmscripts/dm-kill"),
-                 desc='Kill processes via dmenu'
-                 ),
-             Key([], "l",
-                 lazy.spawn("./dmscripts/dm-logout"),
-                 desc='A logout menu'
-                 ),
-             Key([], "m",
-                 lazy.spawn("./dmscripts/dm-man"),
-                 desc='Search manpages in dmenu'
-                 ),
-             Key([], "o",
-                 lazy.spawn("./dmscripts/dm-bookman"),
-                 desc='Search your qutebrowser bookmarks and quickmarks'
-                 ),
-             Key([], "r",
-                 lazy.spawn("./dmscripts/dm-reddit"),
-                 desc='Search reddit via dmenu'
-                 ),
-             Key([], "s",
-                 lazy.spawn("./dmscripts/dm-websearch"),
-                 desc='Search various search engines via dmenu'
-                 ),
-             Key([], "p",
-                 lazy.spawn("passmenu"),
-                 desc='Retrieve passwords with dmenu'
-                 )
-         ])
-]
 
 groups = [Group("DEV", layout='monadtall'),
           Group("WWW", layout='monadtall'),
@@ -261,30 +187,30 @@ layouts = [
     #layout.Zoomy(**layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(**layout_theme),
-    layout.Stack(num_stacks=2),
-    layout.RatioTile(**layout_theme),
-    layout.TreeTab(
-         font = "Ubuntu",
-         fontsize = 10,
-         sections = ["FIRST", "SECOND", "THIRD", "FOURTH"],
-         section_fontsize = 10,
-         border_width = 2,
-         bg_color = "1c1f24",
-         active_bg = "c678dd",
-         active_fg = "000000",
-         inactive_bg = "a9a1e1",
-         inactive_fg = "1c1f24",
-         padding_left = 0,
-         padding_x = 0,
-         padding_y = 5,
-         section_top = 10,
-         section_bottom = 20,
-         level_shift = 8,
-         vspace = 3,
-         panel_width = 200
-         ),
-    layout.Floating(**layout_theme)
-]
+    #layout.Stack(num_stacks=2),
+    #layout.RatioTile(**layout_theme),
+#     layout.TreeTab(
+#          font = "Ubuntu",
+#          fontsize = 10,
+#          sections = ["FIRST", "SECOND", "THIRD", "FOURTH"],
+#          section_fontsize = 10,
+#          border_width = 2,
+#          bg_color = "1c1f24",
+#          active_bg = "ff5f00",
+#          active_fg = "000000",
+#          inactive_bg = "a9a1e1",
+#          inactive_fg = "1c1f24",
+#          padding_left = 0,
+#          padding_x = 0,
+#          padding_y = 5,
+#          section_top = 10,
+#          section_bottom = 20,
+#          level_shift = 8,
+#          vspace = 3,
+#          panel_width = 200
+#          ),
+#     layout.Floating(**layout_theme)
+ ]
 
 colors = [["#000000", "#282c34"],
           ["#1c1f24", "#1c1f24"],
@@ -317,7 +243,7 @@ def init_widgets_list():
                        background = colors[0]
                        ),
               widget.Image(
-                       filename = "~/.config/qtile/icons/python-white.png",
+                       filename = '~/Pictures/Berserk/sacrifice_brand.jpg',
                        scale = "False",
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)}
                        ),
@@ -380,11 +306,7 @@ def init_widgets_list():
                        background = colors[0],
                        padding = 0
                        ),
-              widget.Systray(
-                       background = colors[0],
-                       padding = 5
-                       ),
-              widget.Sep(
+               widget.Sep(
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[0],

@@ -1,5 +1,6 @@
-#!/usr/bin/env bash 
+#!/usr/bin/bash 
 
+xrandr --output HDMI-2 --auto --left-of eDP-1
 setxkbmap -option caps:swapescape
 festival --tts $HOME/.config/qtile/welcome_msg &
 lxsession &
