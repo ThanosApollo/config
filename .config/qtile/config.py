@@ -273,6 +273,7 @@ def init_widgets_list():
                        foreground = colors[2],
                        background = colors[0]
                        ),
+
              widget.TextBox(
                        text = '|',
                        font = "Ubuntu Mono",
@@ -312,7 +313,10 @@ def init_widgets_list():
                        foreground = colors[0],
                        background = colors[0]
                        ),
-              widget.TextBox(
+             widget.Systray(
+                 background = colors[0],
+             ),
+             widget.TextBox(
                        text = '',
                        font = "Ubuntu Mono",
                        background = colors[0],
@@ -320,7 +324,8 @@ def init_widgets_list():
                        padding = 0,
                        fontsize = 37
                        ),
-             widget.Net(
+
+            widget.Net(
                        interface = "enp5s0",
                        format = 'Net: {down} ↓↑ {up}',
                        foreground = colors[1],
