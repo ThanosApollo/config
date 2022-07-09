@@ -28,9 +28,9 @@ fi
 
 ##-----------------------------------------------------
 ## alias
-if [ -f /home/apo11o/.config/synth-shell/alias.sh ] && [ -n "$( echo $- | grep i )" ]; then
-	source /home/apo11o/.config/synth-shell/alias.sh
-fi
+# if [ -f /home/apo11o/.config/synth-shell/alias.sh ] && [ -n "$( echo $- | grep i )" ]; then
+# 	source /home/apo11o/.config/synth-shell/alias.sh
+# fi
 
 ##-----------------------------------------------------
 ## better-history
