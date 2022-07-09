@@ -62,7 +62,7 @@ myBrowser = "librewolf"   # My browser of choice
 keys = [
          ### The essentials
          Key([mod], "Return",
-             lazy.spawn(myTerm+" -e fish"),
+             lazy.spawn(myTerm),
              desc='Launches My Terminal'
              ),
          Key([mod], "Tab",
