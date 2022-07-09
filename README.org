@@ -4,4 +4,4 @@
 
 
 * How can I make a bare git repo?
-+ I recommend watching [[Distrotube bare git repo tutorial][https://www.youtube.com/watch?v=tBoLDpTWVOM]]
++ I recommend watching Distrotube bare git repo tutorial -> https://www.youtube.com/watch?v=tBoLDpTWVOM]
