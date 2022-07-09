@@ -1,17 +1,12 @@
-source ~/.bashrc_arco
+
+# Do not edit this fail
+# make changes on .bashrc_main
+
+source ~/.bashrc_main
 #source .bashrc_backup
 source ~/.local/share/blesh/ble.sh
 
 
-export PATH="$HOME/.emacs.d/bin:$PATH"
-
-alias config='/usr/bin/git --git-dir=$HOME/Developer/config/ --work-tree=$HOME'
-alias ga='git add'
-alias gaa='git add .'
-alias gc='git commit -m'
-alias gp='git push -u origin'
-alias gpm='git push -u origin master'
-alias gs='git status' 
 
 ##-----------------------------------------------------
 ## synth-shell-greeter.sh
