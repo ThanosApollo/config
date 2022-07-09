@@ -1,4 +1,4 @@
-source .bashrc_arco
+source ~/.bashrc_arco
 #source .bashrc_backup
 source ~/.local/share/blesh/ble.sh
 
@@ -27,9 +27,9 @@ fi
 
 ##-----------------------------------------------------
 ## better-ls
-if [ -f /home/apo11o/.config/synth-shell/better-ls.sh ] && [ -n "$( echo $- | grep i )" ]; then
-	source /home/apo11o/.config/synth-shell/better-ls.sh
-fi
+#if [ -f /home/apo11o/.config/synth-shell/better-ls.sh ] && [ -n "$( echo $- | grep i )" ]; then
+#	source /home/apo11o/.config/synth-shell/better-ls.sh
+#fi
 
 ##-----------------------------------------------------
 ## alias
