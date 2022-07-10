@@ -316,17 +316,21 @@ def init_widgets_list():
         ),
         widget.GroupBox(font="FontAwesome",
                         fontsize = 16,
-                        margin_y = -1,
+                        margin_y = 3,
                         margin_x = 0,
                         padding_y = 6,
                         padding_x = 5,
-                        borderwidth = 0,
+                        borderwidth = 1,
                         disable_drag = True,
                         active = colors[11],
-                        inactive = colors[11],
+                        inactive = colors[10],
                         rounded = False,
-                        highlight_method = "text",
-                        this_current_screen_border = colors[8],
+                        highlight_color = colors[1],
+                        highlight_method = "line",
+                        this_current_screen_border = colors[11],
+                        other_current_screen_border = colors[10],
+                        #this_screen_border = colors [5],
+                        #other_screen_border = colors[9],
                         foreground = colors[2],
                         background = colors[1]
                         ),
@@ -424,7 +428,13 @@ def init_widgets_list():
                #          foreground = colors[5],
                #          background = colors[1],
 	           #          ),
-               widget.TextBox(
+                widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[2],
+                        background = colors[1]
+                        ),
+                widget.TextBox(
                         font="FontAwesome",
                         text="  ",
                         foreground=colors[6],
@@ -432,7 +442,7 @@ def init_widgets_list():
                         padding = 0,
                         fontsize=16
                         ),
-               widget.CPUGraph(
+                widget.CPUGraph(
                         border_color = colors[2],
                         fill_color = colors[8],
                         graph_color = colors[8],
@@ -442,6 +452,12 @@ def init_widgets_list():
                         core = "all",
                         type = "box"
                         ),
+                widget.ThermalSensor(
+                       foreground = colors[6],
+                       backgroumd = colors[3],
+                       padding = 0,
+                       fontsize = 13,
+                       ),
                widget.Sep(
                         linewidth = 1,
                         padding = 10,
@@ -502,7 +518,7 @@ widgets_list = init_widgets_list()
 
 def init_widgets_screen1():
     widgets_screen1 = init_widgets_list()
-    return widgets_screen1
+    return widgets_screen1[0:15]
 
 def init_widgets_screen2():
     widgets_screen2 = init_widgets_list()

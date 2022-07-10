@@ -1,5 +1,9 @@
 #+title: My Config
 
 
-*** Consists of
-+ Qtile [[file:.config/qtile/config.py]]
+*** Currently I'm using:
++ Qtile [[QTILE][file:.config/qtile/config.py]]
++ Alacritty [[file:.config/alacritty/alacritty.yml]]
++ bash [[file:.bashrc]] [[file:.bashrc_main]] with configured synth-shell [[file:.config/synth-shell]]
+*** How it looks
+[[file:Pictures/Screenshots/qtile-vim-cava-07-10.png]]
