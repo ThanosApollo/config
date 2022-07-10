@@ -2,4 +2,4 @@
 
 
 *** Consists of
-+ Qtile [[file:.config]]
++ Qtile [[file:.config/qtile/config.py]]
