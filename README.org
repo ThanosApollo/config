@@ -6,7 +6,7 @@
 *** Currently I'm using:
 + [[file:.config/qtile/config.py][Qtile]]
 + [[file:.config/alacritty/alacritty.yml][Alacrity]]
-+ bash with this [[file:.bashrc][bashrc]] [[file:.bashrc_main][bashrc_config]] and configured [[https://github.com/andresgongora/synth-shell][synth-shell]] | [[file:.config/synth-shell][my_synth_shell]]
++ bash with this [[file:.bashrc][bashrc]] + [[file:.bashrc_main][bashrc_config]] and configured [[https://github.com/andresgongora/synth-shell][synth-shell]] | [[file:.config/synth-shell][my_synth_shell]]
 + [[https://github.com/doomemacs/doomemacs][Doom emacs]]
 + NeoVim wtih [[https://spacevim.org/][Spacevim]]
 + *You can find i3 config on the "old" branch but I'm not maintaining it anymore*
