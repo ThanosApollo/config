@@ -5,5 +5,7 @@
 + Qtile [[QTILE][file:.config/qtile/config.py]]
 + Alacritty [[file:.config/alacritty/alacritty.yml]]
 + bash [[file:.bashrc]] [[file:.bashrc_main]] with configured synth-shell [[file:.config/synth-shell]]
++ Doom emacs, org mode for note taking
++ NeoVim wtih Spacevim
 *** How it looks
 [[file:Pictures/Screenshots/qtile-vim-cava-07-10.png]]
