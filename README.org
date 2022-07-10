@@ -1,7 +1,7 @@
 #+title: My Config
 
 + This is git bare repo to manage my personal dotfiles
-+ Ditrotube git bare repo tutorial [[https://www.youtube.com/watch?v=tBoLDpTWVOM][here]]
++ Distrotube git bare repo tutorial [[https://www.youtube.com/watch?v=tBoLDpTWVOM][here]]
 
 *** Currently I'm using:
 + [[file:.config/qtile/config.py][Qtile]]
