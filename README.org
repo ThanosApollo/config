@@ -7,7 +7,7 @@
 + [[file:.config/qtile/config.py][Qtile]]
 + [[file:.config/alacritty/alacritty.yml][Alacrity]]
 + bash [[file:.bashrc][bashrc]] [[file:.bashrc_main][bashrc_config]] with configured synth-shell [[file:.config/synth-shell][my_synth_shell]]
-+ Doom emacs, org mode for note taking
++ Doom emacs
 + NeoVim wtih Spacevim
 + *You can find i3 config on the "old" branch but I'm not maintaining it anymore*
 *** How it looks
