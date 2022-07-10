@@ -7,8 +7,8 @@
 + [[file:.config/qtile/config.py][Qtile]]
 + [[file:.config/alacritty/alacritty.yml][Alacrity]]
 + bash [[file:.bashrc][bashrc]] [[file:.bashrc_main][bashrc_config]] with configured synth-shell [[file:.config/synth-shell][my_synth_shell]]
-+ Doom emacs
-+ NeoVim wtih Spacevim
++ [[https://github.com/doomemacs/doomemacs][Doom emacs]]
++ NeoVim wtih [[https://spacevim.org/][Spacevim]]
 + *You can find i3 config on the "old" branch but I'm not maintaining it anymore*
 *** How it looks
 [[file:Pictures/Screenshots/qtile-vim-cava-07-10.png]]
