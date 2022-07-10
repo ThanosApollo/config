@@ -2,9 +2,9 @@
 
 
 *** Currently I'm using:
-+ Qtile [[QTILE][file:.config/qtile/config.py]]
-+ Alacritty [[file:.config/alacritty/alacritty.yml]]
-+ bash [[file:.bashrc]] [[file:.bashrc_main]] with configured synth-shell [[file:.config/synth-shell]]
++ [[file:.config/qtile/config.py][Qtile]]
++ [[file:.config/alacritty/alacritty.yml][Alacrity]]
++ bash [[file:.bashrc][bashrc]] [[file:.bashrc_main][bashrc_config]] with configured synth-shell [[file:.config/synth-shell][my_synth_shell]]
 + Doom emacs, org mode for note taking
 + NeoVim wtih Spacevim
 + *You can find i3 config on the "old" branch but I'm not maintaining it anymore*
