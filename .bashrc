@@ -25,6 +25,9 @@
 # \_| |_/ .__/ \___/|_|_|\___/   \___\___/|_| |_|_| |_|\__, |
 #       | |                                             __/ |
 #       |_|                                            |___/
+
+
+
 PS1='\n\[\e[0m\][\[\e[0;1;38;5;208m\]\w\[\e[0;2;38;5;248m\]|\[\e[0;2;38;5;220m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2) \[\e[0;2;38;5;242m\]\t\[\e[0m\]]\n\[\e[0m\]-\[\e[0m\]> \[\e[0m\]'
 #Neovim > Vim
 alias vim='nvim'
@@ -37,10 +40,17 @@ alias gaa='git add .'
 alias gc='git commit -m'
 alias gp='git push -u origin'
 alias gpm='git push -u origin master'
+alias gpd='git push -u origin developer'
 alias gs='git status'
+
+#pacman | paru
+alias yay='paru'
+alias u='paru -Syu'
+alias r='paru -R'
 
 #aliases
 alias ls='ls --color=auto'
 alias bm='blueman-manager'
 alias sb='sudo systemctl start bluetooth'
 alias mykeys='setxkbmap -option caps:escape'
+alias logout='pkill -U apollo'
