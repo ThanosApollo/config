@@ -1,6 +1,6 @@
 #+title: My Config
 
-+ This is git bare repo to manage my personal dotfiles
++ This is a git bare repo to manage my personal dotfiles
 + Distrotube git bare repo tutorial [[https://www.youtube.com/watch?v=tBoLDpTWVOM][here]]
 
 *** Currently I'm using:
