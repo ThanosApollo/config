@@ -1,0 +1,13 @@
+#+title: My Config and dotfiles
+
++ This is git bare repo to manage my personal dotfiles
++ Distrotube git bare repo tutorial [[https://www.youtube.com/watch?v=tBoLDpTWVOM][here]]
+
+*** Currently I'm using:
++ [[file:.config/qtile/config.py][Qtile]]
++ [[file:.config/alacritty/alacritty.yml][Alacrity]]
++ bash with this [[file:.bashrc][bashrc]] + [[file:.bashrc_main][bashrc_config]] and configured [[https://github.com/andresgongora/synth-shell][synth-shell]] | [[file:.config/synth-shell][my_synth_shell]]
++ [[https://github.com/doomemacs/doomemacs][Doom emacs]]
++ NeoVim wtih [[https://spacevim.org/][Spacevim]]
++ You can find old configs of mine, with different windows manager (e.g i3) in different branches /but they not maintained/
+*** How it looks
