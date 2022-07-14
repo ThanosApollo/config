@@ -42,7 +42,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Documents/org")
+(setq org-directory "~/org")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -77,6 +77,11 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+
+
+;; Default settings
+(setq browser-url-browser-function 'eww-browse-url)
+
 ;; Dired
 (use-package dired
   :ensure nil
@@ -88,24 +93,16 @@
                                "l" 'dired-find-file))
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
+'(custom-safe-themes
    '("97db542a8a1731ef44b60bc97406c1eb7ed4528b0d7296997cbb53969df852d6" default))
  '(doc-view-continuous t)
- '(org-agenda-files '("~/Documents/org/agenda.org"))
+ '(org-agenda-files '("~/org/agenda.org"))
  '(package-selected-packages
    '(pdf-tools org-anki anki-connect quelpa-use-package exwm ##))
  '(warning-suppress-log-types '((erc) (erc)))
  '(warning-suppress-types '((color-theme) (erc) (erc))))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:height 100 :family "hack"))))
+'(default ((t (:height 100 :family "hack"))))
  '(org-level-1 ((t (:inherit outline-1 :height 1.3 :family "hack"))))
  '(org-level-2 ((t (:inherit outline-2 :height 1.2 :family "source code pro"))))
  '(org-level-3 ((t (:inherit outline-2 :height 1.2 :family "mono"))))
@@ -130,3 +127,10 @@
 (ad-activate 'linum-update)
 
 ;; Theme
+
+
+;; Elfeed
+;;
+(global-set-key (kbd "C-x C-e") 'elfeed)
+(require 'elfeed)
+(setq-default elfeed-search-filter "@1-week-ago +unread ")
