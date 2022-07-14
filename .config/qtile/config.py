@@ -1,29 +1,3 @@
-# Copyright (c) 2010 Aldo Cortesi
-# Copyright (c) 2010, 2014 dequis
-# Copyright (c) 2012 Randall Ma
-# Copyright (c) 2012-2014 Tycho Andersen
-# Copyright (c) 2012 Craig Barnes
-# Copyright (c) 2013 horsik
-# Copyright (c) 2013 Tao Sauvage
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-#
 #
 #      QQQQQQQQQ              tttt            iiii  lllllll
 #    QQ:::::::::QQ         ttt:::t           i::::i l:::::l
@@ -86,7 +60,7 @@ def window_to_next_group(qtile):
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "librewolf"   # My browser of choice
+myBrowser = "qutebrowser"   # My browser of choice
 
 keys = [
          ### The essentials
@@ -97,6 +71,9 @@ keys = [
          Key([mod], "Tab",
              lazy.spawn("dmenu_run -p 'Run: '"),
              desc='Run Launcher'
+             ),
+         Key([mod], "p",
+             lazy.spawn("passmenu -p 'Password for: '"),
              ),
          Key([mod], "b",
              lazy.spawn(myBrowser),
@@ -296,7 +273,7 @@ layouts = [
 ]
 
 # COLORS FOR THE BAR
-#Theme name : ArcoLinux Default
+
 def init_colors():
     return [
             ["#2F343F", "#2F343F"], # color 0
@@ -304,7 +281,7 @@ def init_colors():
             ["#2F343F", "#2F343F"], # color 2
             ["#c0c5ce", "#c0c5ce"], # color 3
             ["#fba922", "#fba922"], # color 4
-            ["#3384d0", "#3384d0"], # color 5
+            ["#3384d0", "#3384d0"], # Blue
             ["#f3f4f5", "#f3f4f5"], # color 6
             ["#cd1f3f", "#cd1f3f"], # color 7
             ["#62FF00", "#62FF00"], # color 8
@@ -349,7 +326,7 @@ def init_widgets_list():
                         padding_x = 5,
                         borderwidth = 1,
                         disable_drag = True,
-                        active = colors[11],
+                        active = colors[5],
                         inactive = colors[10],
                         rounded = False,
                         highlight_color = colors[1],
@@ -369,7 +346,7 @@ def init_widgets_list():
                         ),
                widget.CurrentLayout(
                         font = "Noto Sans Bold",
-                        foreground = colors[5],
+                        foreground = colors[4],
                         background = colors[1]
                         ),
                widget.Sep(
@@ -380,7 +357,7 @@ def init_widgets_list():
                         ),
                widget.WindowName(font="Noto Sans",
                         fontsize = 12,
-                        foreground = colors[5],
+                        foreground = colors[8],
                         background = colors[1],
                         ),
                # widget.Net(
@@ -426,22 +403,13 @@ def init_widgets_list():
                #          padding = 3,
                #          threshold = 80
                #          ),
-               # # battery option 1  ArcoLinux Horizontal icons do not forget to import arcobattery at the top
+               #
                # widget.Sep(
                #          linewidth = 1,
                #          padding = 10,
                #          foreground = colors[2],
                #          background = colors[1]
                #          ),
-               # arcobattery.BatteryIcon(
-               #          padding=0,
-               #          scale=0.7,
-               #          y_poss=2,
-               #          theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-               #          update_interval = 5,
-               #          background = colors[1]
-               #          ),
-               # # battery option 2  from Qtile
                # widget.Sep(
                #          linewidth = 1,
                #          padding = 10,
@@ -454,7 +422,7 @@ def init_widgets_list():
                #          fontsize = 12,
                #          foreground = colors[5],
                #          background = colors[1],
-	           #          ),
+               #          ),
                #  widget.Sep(
                #          linewidth = 1,
                #          padding = 10,
@@ -506,36 +474,36 @@ def init_widgets_list():
                #         fmt = 'Mem: {}',
                #         padding = 5
                #        ),
-               # widget.Sep(
-               #          linewidth = 1,
-               #          padding = 10,
-               #          foreground = colors[2],
-               #          background = colors[1]
-               #          ),
-               # widget.TextBox(
-               #          font="FontAwesome",
-               #          text="  ",
-               #          foreground=colors[4],
-               #          background=colors[1],
-               #          padding = 0,
-               #          fontsize=18
-               #          ),
-               # widget.Clock(
-               #          foreground = colors[3],
-               #          background = colors[1],
-               #          fontsize = 18,
-               #          format="%Y-%m-%d | %H:%M  "
-               #          ),
                widget.Sep(
                         linewidth = 1,
                         padding = 10,
                         foreground = colors[2],
                         background = colors[1]
                         ),
+               widget.TextBox(
+                        font="FontAwesome",
+                        text="  ",
+                        foreground=colors[4],
+                        background=colors[1],
+                        padding = 0,
+                        fontsize=18
+                        ),
+               widget.Clock(
+                        foreground = colors[3],
+                        background = colors[1],
+                        fontsize = 18,
+                        format="%d-%m-%Y | %H:%M"
+                        ),
+               widget.Sep(
+                        linewidth = 1,
+                        padding = 3,
+                        foreground = colors[2],
+                        background = colors[1]
+                        ),
                widget.Systray(
                         background=colors[1],
-                        icon_size=20,
-                        padding = 4
+                        icon_size=21,
+                        padding = 10
                         ),
               ]
     return widgets_list
@@ -557,7 +525,7 @@ widgets_screen2 = init_widgets_screen2()
 
 def init_screens():
     return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=26, opacity=0.8)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=26, opacity=0.8))]
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=30, opacity=0.8))]
 screens = init_screens()
 
 
@@ -574,17 +542,13 @@ dgroups_app_rules = []
 
 
 
-main = None
+
 
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser('~')
-    subprocess.call([home + '/.config/qtile/scripts/autostart.sh'])
+    subprocess.call([home + '/.config/autostart/setup.sh'])
 
-@hook.subscribe.startup
-def start_always():
-    # Set the cursor to something sane in X
-    subprocess.Popen(['xsetroot', '-cursor_name', 'left_ptr'])
 
 @hook.subscribe.client_new
 def set_floating(window):
@@ -598,32 +562,6 @@ floating_types = ["notification", "toolbar", "splash", "dialog"]
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
-floating_layout = layout.Floating(float_rules=[
-    # Run the utility of `xprop` to see the wm class and name of an X client.
-    *layout.Floating.default_float_rules,
-    Match(wm_class='confirmreset'),  # gitk
-    Match(wm_class='makebranch'),  # gitk
-    Match(wm_class='maketag'),  # gitk
-    Match(wm_class='ssh-askpass'),  # ssh-askpass
-    Match(title='branchdialog'),  # gitk
-    Match(title='pinentry'),  # GPG key password entry
-    Match(wm_class='Arcolinux-welcome-app.py'),
-    Match(wm_class='Arcolinux-calamares-tool.py'),
-    Match(wm_class='confirm'),
-    Match(wm_class='dialog'),
-    Match(wm_class='download'),
-    Match(wm_class='error'),
-    Match(wm_class='file_progress'),
-    Match(wm_class='notification'),
-    Match(wm_class='splash'),
-    Match(wm_class='toolbar'),
-    Match(wm_class='Arandr'),
-    Match(wm_class='feh'),
-    Match(wm_class='Galculator'),
-    Match(wm_class='archlinux-logout'),
-    Match(wm_class='xfce4-terminal'),
-
-],  fullscreen_border_width = 0, border_width = 0)
 auto_fullscreen = True
 
 focus_on_window_activation = "focus" # or smart

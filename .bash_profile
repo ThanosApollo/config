@@ -5,11 +5,15 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
-export EDITOR="nvim"
+export EDITOR="emacsclient"
 export TERMINAL="alacritty"
-export BROWSER="librewolf"
+export BROWSER="qutebrowser"
 export READER="zathura"
 
 
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+
+
+
