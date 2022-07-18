@@ -34,7 +34,15 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-one)
+
+;;(setq modus-themes-mode-line '(accented boarderless))
+;;(setq modus-themes-region '(bg-only))
+
+
+
+;(load-theme 'modus-vivendi t)
+
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -80,7 +88,7 @@
 
 
 ;; Default settings
-(setq browser-url-browser-function 'eww-browse-url)
+(setq browser-url-browser-function 'browse-url-default-browser)
 
 ;; Dired
 (use-package dired
@@ -131,6 +139,42 @@
 
 ;; Elfeed
 ;;
-(global-set-key (kbd "C-x C-e") 'elfeed)
+(global-set-key (kbd "C-c e") 'elfeed)
+(global-set-key (kbd "C-c u") 'elfeed-update)
 (require 'elfeed)
-(setq-default elfeed-search-filter "@1-week-ago +unread ")
+(use-package elfeed
+  :config
+  (setq elfeed-search-feed-face ":foreground #fff :weight bold"
+        elfeed-feeds (quote
+                       (("https://www.reddit.com/r/linux.rss" reddit linux)
+                        ("https://www.reddit.com/r/commandline.rss" reddit commandline)
+                        ("https://www.reddit.com/r/distrotube.rss" reddit distrotube)
+                        ("https://www.reddit.com/r/emacs.rss" reddit emacs)
+                        ("https://www.gamingonlinux.com/article_rss.php" gaming linux)
+                        ("https://hackaday.com/blog/feed/" hackaday linux)
+                        ("https://opensource.com/feed" opensource linux)
+                        ("https://linux.softpedia.com/backend.xml" softpedia linux)
+                        ("https://www.thelancet.com/rssfeed/ebiom_current.xml" medicine ebiom)
+                        ("http://feeds.feedburner.com/d0od" omgubuntu linux)
+                        ("https://www.computerworld.com/index.rss" computerworld linux)
+                        ("https://www.networkworld.com/category/linux/index.rss" networkworld linux)
+                        ("https://www.techrepublic.com/rssfeeds/topic/open-source/" techrepublic linux)
+                        ("https://betanews.com/feed" betanews linux)
+                        ("http://lxer.com/module/newswire/headlines.rss" lxer linux)
+                        ("https://distrowatch.com/news/dwd.xml" medicine lancet)))))
+
+(use-package elfeed-goodies
+  :init
+  (elfeed-goodies/setup)
+  :config
+  (setq elfeed-goodies/entry-pane-size 0.5))
+
+(defun elfeed-search-format-date (date)
+  (format-time-string "%Y-%m-%d %H:%M" (seconds-to-time date)))
+(add-hook 'elfeed-show-mode-hook 'visual-line-mode)
+(evil-define-key 'normal elfeed-show-mode-map
+  (kbd "J") 'elfeed-goodies/split-show-next
+  (kbd "K") 'elfeed-goodies/split-show-prev)
+(evil-define-key 'normal elfeed-search-mode-map
+  (kbd "J") 'elfeed-goodies/split-show-next
+  (kbd "K") 'elfeed-goodies/split-show-prev)
