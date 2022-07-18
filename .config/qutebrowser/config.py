@@ -18,7 +18,8 @@ config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
 
 # make sure rofi is installed
-config.bind('ph', 'spawn --userscript qute-pass')
+config.bind('phu', 'spawn --userscript qute-pass --username-only')
+config.bind('php', 'spawn --userscript qute-pass --password-only')
 
 
 
