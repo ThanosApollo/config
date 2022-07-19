@@ -8,7 +8,7 @@
  '(doc-view-continuous t)
  '(org-agenda-files '("~/org/agenda.org"))
  '(package-selected-packages
-   '(modus-themes clippy pdf-tools org-anki anki-connect quelpa-use-package exwm ##))
+   '(org-inline-pdf org-noter-pdftools modus-themes clippy pdf-tools org-anki anki-connect quelpa-use-package exwm ##))
  '(warning-suppress-log-types '((erc) (erc)))
  '(warning-suppress-types '((color-theme) (erc) (erc))))
 (custom-set-faces
@@ -18,7 +18,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:height 100 :family "hack"))))
  '(org-level-1 ((t (:inherit outline-1 :height 1.3 :family "hack"))))
- '(org-level-2 ((t (:inherit outline-2 :height 1.2 :family "source code pro"))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.2 :family "mono"))))
  '(org-level-3 ((t (:inherit outline-2 :height 1.2 :family "mono"))))
  '(org-level-4 ((t (:inherit outline-2 :height 1.0))))
  '(org-level-5 ((t (:inherit outline-2 :height 1.0)))))
