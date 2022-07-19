@@ -24,7 +24,7 @@ config.bind('php', 'spawn --userscript qute-pass --password-only')
 
 
 # Theme
-config.source('themes/base16-gruvbox-material-dark-hard.config.py')
+config.source('themes/base16-onedark.config.py')
 
 # Search engines
 c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}',
