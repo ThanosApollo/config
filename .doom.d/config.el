@@ -156,7 +156,6 @@
                         ("https://www.techrepublic.com/rssfeeds/topic/open-source/" techrepublic linux)
                         ("https://betanews.com/feed" betanews linux)
                         ("http://lxer.com/module/newswire/headlines.rss" lxer linux)
-                        ("https://distrowatch.com/news/dwd.xml" medicine lancet)
                         ("https://stallman.org/rss/rss.xml"RichardStallman)))))
 
 (use-package elfeed-goodies
